@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт проекта обучения верстке How to learn">
-  <link rel="stylesheet" href="vendor/normalize.css">
   <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
 <body>
   <div class="page">
     <!--Шапка сайта-->
-    <header class="header">
-      <img src="images/logo/logo_place_header.svg" alt="логотип Яндекс" class="logo logo_place_header">
+    <header id="start" class="header">
+      <a href="#"><img src="images/logo/logo_place_header.svg" alt="логотип Яндекс" class="logo logo_place_header"></a>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="paragraph header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a href="#" class="header__link"> Узнать &rarr;</a></p>
       <img src="images/header/header-image.png" alt="Опять двойка" class="header__main-illustration">
@@ -73,12 +72,14 @@
       <div class="video inflow">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="paragraph section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-          <iframe class="video__iframe" width="515" height="316"
-                  src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
-          <iframe class="video__iframe" width="515" height="316"
-                  src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>  
-        </div>
+        <ul class="video__iframes list">
+          <li class="video-item">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+          </li>
+          <li class="video__item">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+          </li>
+        </ul>
       </div>
       <!--Секция Oakley-->
       <section class="oakley">
@@ -148,7 +149,7 @@
           <p class="paragraph khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. 
             Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, 
             которые приносят успех в школе, карьере и жизни.</p>
-          <p class="paragraph khan__quote-author">Джордж Лукас</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="paragraph khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan/khan-book.jpg" alt="Книга 'Весь мир-школа'">
@@ -229,7 +230,7 @@
       <div class="footer__columns">
         <!--Копирайт-->
         <div class="footer__column footer__column_content_copyright"> 
-          <img src="images/logo/logo_place_footer.svg" alt="логотип Яндекс" class="logo logo_place_footer">
+          <a href="#start"><img src="images/logo/logo_place_footer.svg" alt="логотип Яндекс" class="logo logo_place_footer"></a>
           <p class="paragraph footer__author">&copy; 2022. Юлия Перфилова</p> 
         </div>
         <!--Инфо-->
@@ -252,13 +253,19 @@
           <h3 class="footer__column-heading">Соцсети</h3>
           <ul class="footer__column-links list">
             <li>
-              <a href="#" class="footer__column-link footer__column-link_place_social" target="_blank"><img src="images/footer/facebook_color_white.svg" class="footer__social-icon" alt="Иконка Фейсбук">Facebook</a>
+              <a href="#" class="footer__column-link footer__column-link_place_social" target="_blank">
+                <img src="images/footer/facebook_color_white.svg" class="footer__social-icon" alt="Иконка Фейсбук">Facebook
+              </a>
             </li>
             <li>
-              <a href="#" class="footer__column-link footer__column-link_place_social" target="_blank"><img src="images/footer/vk_color_white.svg" class="footer__social-icon" alt="Иконка ВК">ВКонтакте</a>
+              <a href="#" class="footer__column-link footer__column-link_place_social" target="_blank">
+                <img src="images/footer/vk_color_white.svg" class="footer__social-icon" alt="Иконка ВК">ВКонтакте
+              </a>
             </li>
             <li>
-              <a href="#" class="footer__column-link footer__column-link_place_social" target="_blank"><img src="images/footer/instagram_color_white.svg" class="footer__social-icon" alt="Иконка Инстаграм">Instagram</a>
+              <a href="#" class="footer__column-link footer__column-link_place_social" target="_blank">
+                <img src="images/footer/instagram_color_white.svg" class="footer__social-icon" alt="Иконка Инстаграм">Instagram
+              </a>
             </li>
           </ul>
         </nav>

@@ -1,0 +1,8 @@
+.video-item {
+  margin-right: 20px;
+}
+
+
+.video__item:last-child {
+  margin-right: 0;
+}
